@@ -1,1 +1,84 @@
-index.html
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sebastijanove usluge</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: radial-gradient(circle at top, #0f172a, #000);
+      font-family: 'Orbitron', sans-serif;
+      color: white;
+      text-align: center;
+    }
+
+    .container {
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 40px;
+      text-shadow: 0 0 15px cyan;
+    }
+
+    p {
+      font-size: 18px;
+      margin-top: 15px;
+      color: #a5f3fc;
+    }
+
+    button {
+      margin-top: 25px;
+      padding: 12px 20px;
+      border: none;
+      cursor: pointer;
+      font-family: inherit;
+      font-size: 16px;
+      border-radius: 8px;
+      background: cyan;
+      color: black;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background: #00bcd4;
+      transform: scale(1.05);
+    }
+
+    #snap {
+      margin-top: 15px;
+      font-size: 18px;
+      color: #facc15;
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Sebastijanove usluge</h1>
+
+    <p>Photoshop • Pravljenje reklama • Pravljenje sajtova</p>
+
+    <button onclick="prikaziSnap()">Pošalji SMS</button>
+
+    <div id="snap">Snapchat: sebakeba000</div>
+  </div>
+
+  <script>
+    function prikaziSnap() {
+      document.getElementById("snap").style.display = "block";
+    }
+  </script>
+</body>
+</html>
